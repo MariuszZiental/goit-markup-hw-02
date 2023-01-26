@@ -1,0 +1,24 @@
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+}
+
+body {
+    background-color: blue;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var()
+}
