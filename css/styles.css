@@ -1,24 +1,55 @@
 :root {
-  --main-color: #212121;
-  --secondary-color: #757575;
+  --main-font-color: #212121;
+  --secondary-font-color: #757575;
+  --brand-color: #2196f3;
 }
 
 body {
-    background-color: blue;
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  text-transform: uppercase;
-  text-align: center;
+.brand-link {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+  color: #000000
+ 
 }
+
+.brand-color {
+color: #2196f3;
+} 
 
 .navbar a {
   text-decoration: none;
+}
+
+.navbar .nav-list a {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: var()
+  color: var(--main-font-color, black);
+}
+
+.navbar .contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-font-color, gray);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
 }
