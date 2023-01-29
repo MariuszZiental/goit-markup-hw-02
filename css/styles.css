@@ -8,24 +8,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.brand-link {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-  color: #000000
- 
+a:link {
+  color: #ff0000;
 }
-
-.brand-color {
-color: #2196f3;
-} 
 
 .navbar a {
   text-decoration: none;
+}
+
+.nav-list {
+ position: static;
+text-align:
+}
+
+div.static {
+  position: static;
+}
+
+.contact-link {
+  position: static;
+  text-align: right;
 }
 
 .navbar .nav-list a {
@@ -42,15 +44,113 @@ color: #2196f3;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: var(--secondary-font-color, gray);
+}
+
+.top-brand-link {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.bottom-brand-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.brand-color {
+  color: #2196f3;
+}
+
+.big-black-box {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
+.main-page-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: var(--brand-color, blue);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  color: #ffffff;
+}
+
+.our-strengths {
+  position: absolute;
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
 }
 
 ul {
   list-style-type: none;
 }
 
-h1 {
-  text-transform: uppercase;
+ul li {
+}
+
+h2 {
   text-align: center;
+}
+
+.workscope {
+  position: absolute;
+  width: 1170px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
+}
+
+.our-crew {
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+
+  background: #f5f4fa;
+}
+
+.little-black-box {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+
+  background: #2f303a;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
