@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100%;
+  
 }
 
 ul {
@@ -151,8 +152,6 @@ h1 {
 
 .our-strengths {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 
