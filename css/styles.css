@@ -5,14 +5,8 @@
 }
 
 body {
-  min-height: 100%;
-}
-
-body {
   font-family: "Roboto", sans-serif;
-}
-.brand-color {
-  color: #2196f3;
+  min-height: 100%;
 }
 
 ul {
@@ -31,12 +25,16 @@ h2 {
 
 .nav-list {
   list-style: none;
+  display: inline-block;
+}
+
+.nav-list ul {
+  display: inline-block;
 }
 
 .nav-list li {
   display: inline-block;
   padding: 0px 20px;
-  justify-content: last baseline;
 }
 
 .navbar .nav-list a {
@@ -64,6 +62,10 @@ a:link {
 /*navbar and links end*/
 
 /*logo start*/
+
+.brand-color {
+  color: #2196f3;
+}
 
 .top-brand-link {
   font-weight: 700;
