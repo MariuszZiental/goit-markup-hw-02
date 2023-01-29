@@ -5,29 +5,38 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  min-height: 100%;
 }
 
-a:link {
-  color: #ff0000;
+body {
+  font-family: "Roboto", sans-serif;
 }
+.brand-color {
+  color: #2196f3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*navbar and links start*/
 
 .navbar a {
   text-decoration: none;
 }
 
 .nav-list {
- position: static;
-text-align:
+  list-style: none;
 }
 
-div.static {
-  position: static;
-}
-
-.contact-link {
-  position: static;
-  text-align: right;
+.nav-list li {
+  display: inline-block;
+  padding: 0px 20px;
+  justify-content: last baseline;
 }
 
 .navbar .nav-list a {
@@ -47,11 +56,19 @@ div.static {
   color: var(--secondary-font-color, gray);
 }
 
+a:link {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+/*navbar and links end*/
+
+/*logo start*/
+
 .top-brand-link {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #000000;
 }
@@ -60,23 +77,27 @@ div.static {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
-.brand-color {
-  color: #2196f3;
-}
+/*logo end*/
 
 .big-black-box {
-  width: 1600px;
   height: 600px;
+  width: 1600px;
   left: 0px;
   top: 80px;
+  border-radius: 0px;
+
   background: #2f303a;
 }
 h1 {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: center;
@@ -85,10 +106,20 @@ h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  color: #ffffff;
 }
+
+/*button start*/
+
 .main-page-button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
   cursor: pointer;
-  display: flex;
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -99,27 +130,69 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 188% */
   color: #ffffff;
 }
 
+.portfolio-page-button {
+  cursor: pointer;
+  display: inline-block;
+  width: 114px;
+  height: 38px;
+  left: 740px;
+  top: 174px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+/*button end*/
+
 .our-strengths {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.title-of-strengths {
+  text-transform: uppercase;
+}
+
+.our-strengths-1 a {
   position: absolute;
-  width: 1170px;
-  height: 101px;
+  width: 270px;
+  height: 75px;
   left: 215px;
-  top: 774px;
+  top: 800px;
 }
 
-ul {
-  list-style-type: none;
+.our-strengths-2 a {
+  position: absolute;
+  width: 270px;
+  height: 75px;
+  left: 515px;
+  top: 800px;
 }
 
-ul li {
+.our-strengths-3 a {
+  position: absolute;
+  width: 270px;
+  height: 75px;
+  left: 815px;
+  top: 800px;
 }
 
-h2 {
-  text-align: center;
+.our-strengths-4 a {
+  position: absolute;
+  width: 270px;
+  height: 75px;
+  left: 1115px;
+  top: 800px;
 }
 
 .workscope {
@@ -142,15 +215,12 @@ h2 {
 
 .little-black-box {
   position: absolute;
-  width: 1600px;
+
   height: 252px;
+  width: 1600px;
   left: 0px;
   top: 2097px;
+  border-radius: 0px;
 
   background: #2f303a;
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
