@@ -5,6 +5,7 @@
 }
 
 body {
+  color: var(--main-font-color);
   font-family: "Roboto", sans-serif;
   min-height: 100%;
 }
@@ -43,7 +44,7 @@ h2 {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: var(--main-font-color, black);
+  color: var(--main-font-color);
 }
 .nav-link .contact-link {
   display: inline-flex;
@@ -235,7 +236,6 @@ h1 {
   display: inline-flex;
   text-align: center;
   cursor: pointer;
-  color: #212121;
   background: #f5f4fa;
 }
 
