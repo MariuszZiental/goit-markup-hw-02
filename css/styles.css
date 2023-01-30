@@ -52,7 +52,7 @@ h2 {
 .nav-link .contact-link ul {
   display: inline-flex;
 }
-.nav-link .contact-link li {
+.nav-link .contact-link ul li {
   display: inline-block;
   padding: 0px 20px;
 }
@@ -79,6 +79,19 @@ h2 {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
+a:link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+color: #2196F3;
+}
+a:active {
+color: blue;
+}
+
 /*logo end*/
 
 .big-black-box {
