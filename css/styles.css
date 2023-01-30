@@ -2,6 +2,12 @@
   --main-font-color: #212121;
   --secondary-font-color: #757575;
   --brand-color: #2196f3;
+  --logo-black-font-color: #000000;
+  --logo-white-font-color: #ffffff;
+  --black-box-color: #2f303a;
+  --our-crew-background: #f5f4fa;
+  --focus-color: palevioletred;
+  --footer-contact-link-color: #ffffff99;
 }
 
 body {
@@ -42,8 +48,6 @@ h2 {
 
 .navbar .nav-list a {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1em;
   letter-spacing: 0.02em;
 
   color: var(--main-font-color);
@@ -63,7 +67,7 @@ h2 {
 /*logo start*/
 
 .brand-color {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 .top-brand-link {
@@ -71,7 +75,7 @@ h2 {
   font-size: 26px;
   line-height: 2em;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-black-font-color);
 }
 .bottom-brand-link {
   text-decoration: none;
@@ -79,36 +83,33 @@ h2 {
   font-size: 26px;
   line-height: 2em;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--logo-white-font-color);
 }
+
 a.top-link:hover {
-  cursor: pointer;
-  color: #2196f3;
+  color: var(--brand-color);
 }
 a.top-link:active {
-  color: red;
+  color: var(--brand-color);
 }
 a.top-link:focus {
-  color: palevioletred;
+  color: var(--focus-color);
 }
+
 
 a.bottom-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-link-color);
   text-decoration: none;
-  cursor: pointer;
 }
 a.bottom-link:hover {
-  cursor: pointer;
-  color: #2196f3;
+  color: var(--brand-color);
 }
 a.bottom-link:active {
-  color: red;
+  color: var(--brand-color);
 }
 a.bottom-link:focus {
-  color: palevioletred;
+  color: var(--focus-color);
 }
-
-
 
 /*logo end*/
 
@@ -119,7 +120,7 @@ a.bottom-link:focus {
   top: 80px;
   border-radius: 0px;
 
-  background: #2f303a;
+  background: var(--black-box-color);
 }
 h1 {
   position: absolute;
@@ -131,12 +132,10 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 3.75em;
-  color: #ffffff;
+  color: var(--logo-white-font-color);
 }
 
 /*button main page start*/
@@ -153,11 +152,11 @@ h1 {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background: var(--brand-color, blue);
-
+  background: var(--brand-color);
+  border-radius: 4px;
   font-size: 16px;
   line-height: 1,87em;
-  color: #ffffff;
+  color: var(--logo-white-font-color);
 }
 
 /*button end*/
@@ -166,11 +165,10 @@ h1 {
 
 .our-strengths {
   font-family: "Roboto";
-  font-size: 14px;
   line-height: 1.5em;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #757575;
+  color: var(--secondary-font-color);
 }
 
 .our-strengths {
@@ -201,7 +199,7 @@ h1 {
   left: 0px;
   top: 1449px;
 
-  background: #f5f4fa;
+  background: var(--our-crew-background);
 }
 
 .list-of-our-crew {
@@ -220,9 +218,8 @@ h1 {
   width: 1600px;
   left: 0px;
   top: 2097px;
-  border-radius: 0px;
 
-  background: #2f303a;
+  background: var(--black-box-color);
 }
 
 /*only portfolio styles start*/
@@ -238,53 +235,14 @@ h1 {
   display: inline-flex;
   text-align: center;
   cursor: pointer;
-  background: #f5f4fa;
-}
-
-.button-wszystkie {
-  cursor: pointer;
+  background: var(--our-crew-background);
   transition-duration: 0.3s;
 }
-.button-wszystkie:hover {
-  color: #f5f4fa;
-  background-color: #2196f3;
+
+.portfolio-page-buttons:hover li {
+  background-color: var(--brand-color);
 }
 
-.button-strony {
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-.button-strony:hover {
-  color: #f5f4fa;
-  background-color: #2196f3;
-}
-
-.button-aplikacje {
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-.button-aplikacje:hover {
-  color: #f5f4fa;
-  background-color: #2196f3;
-}
-
-.button-dizajn {
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-.button-dizajn:hover {
-  color: #f5f4fa;
-  background-color: #2196f3;
-}
-
-.button-marketing {
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-.button-marketing:hover {
-  color: #f5f4fa;
-  background-color: #2196f3;
-}
 /*buttons end*/
 
 /*projects start*/
