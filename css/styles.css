@@ -7,7 +7,6 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100%;
-  
 }
 
 ul {
@@ -17,6 +16,7 @@ ul {
 h2 {
   text-align: center;
 }
+
 
 /*navbar and links start*/
 
@@ -46,20 +46,16 @@ h2 {
 
   color: var(--main-font-color, black);
 }
-
-.navbar .contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--secondary-font-color, gray);
+.nav-link .contact-link {
+  display: inline-flex;
 }
-
-a:link {
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
+.nav-link .contact-link ul {
+  display: inline-flex;
 }
-
+.nav-link .contact-link li {
+  display: inline-block;
+  padding: 0px 20px;
+}
 /*navbar and links end*/
 
 /*logo start*/
@@ -112,7 +108,7 @@ h1 {
   color: #ffffff;
 }
 
-/*button start*/
+/*button main page start*/
 
 .main-page-button {
   position: absolute;
@@ -128,73 +124,28 @@ h1 {
   letter-spacing: 0.06em;
   background: var(--brand-color, blue);
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
 }
 
-.portfolio-page-button {
-  cursor: pointer;
-  display: inline-block;
-  width: 114px;
-  height: 38px;
-  left: 740px;
-  top: 174px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-
 /*button end*/
+
+/*our-strengths start*/
 
 .our-strengths {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 24px;
-
   letter-spacing: 0.03em;
-
+ text-decoration: none;
   color: #757575;
 }
 
-.title-of-strengths {
-  text-transform: uppercase;
+.our-strengths {
+  display: inline-flex;
 }
-
-.our-strengths-1 a {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 215px;
-  top: 800px;
-}
-
-.our-strengths-2 a {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 515px;
-  top: 800px;
-}
-
-.our-strengths-3 a {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 815px;
-  top: 800px;
-}
-
-.our-strengths-4 a {
-  position: absolute;
-  width: 270px;
-  height: 75px;
-  left: 1115px;
-  top: 800px;
-}
+/*workscope start*/
 
 .workscope {
   position: absolute;
@@ -203,6 +154,14 @@ h1 {
   left: 215px;
   top: 969px;
 }
+
+.list-of-workscope {
+  display: inline-flex;
+}
+
+/*workscope end*/
+
+/*our-crew start*/
 
 .our-crew {
   position: absolute;
@@ -214,8 +173,17 @@ h1 {
   background: #f5f4fa;
 }
 
+.list-of-our-crew {
+  display: inline-flex;
+}
+
+/*our-crew end*/
+
+/*footer start*/
+
 .little-black-box {
   position: absolute;
+  text-decoration: none;
 
   height: 252px;
   width: 1600px;
@@ -225,3 +193,82 @@ h1 {
 
   background: #2f303a;
 }
+
+/*only portfolio styles start*/
+
+/*buttons start*/
+
+.portfolio-page-buttons li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+
+  display: inline-flex;
+  text-align: center;
+  cursor: pointer;
+  color: #212121;
+  background: #f5f4fa;
+}
+
+.button-wszystkie {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.button-wszystkie:hover {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+
+.button-strony {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.button-strony:hover {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+
+.button-aplikacje {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.button-aplikacje:hover {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+
+.button-dizajn {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.button-dizajn:hover {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+
+.button-marketing {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.button-marketing:hover {
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+/*buttons end*/
+
+/*projects start*/
+
+.first-line-of-projects {
+  display: inline-flex;
+}
+
+.second-line-of-projects {
+  display: inline-flex;
+}
+
+.third-line-of-projects {
+  display: inline-flex;
+}
+
+/*projects end*/
