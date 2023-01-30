@@ -17,7 +17,6 @@ h2 {
   text-align: center;
 }
 
-
 /*navbar and links start*/
 
 .navbar a {
@@ -79,18 +78,34 @@ h2 {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+a.top-link:hover {
+  cursor: pointer;
+  color: #2196f3;
+}
+a.top-link:active {
+  color: red;
+}
+a.top-link:focus {
+  color: palevioletred;
+}
 
-a:link {
+a.bottom-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   cursor: pointer;
 }
-a:hover {
-color: #2196F3;
+a.bottom-link:hover {
+  cursor: pointer;
+  color: #2196f3;
 }
-a:active {
-color: blue;
+a.bottom-link:active {
+  color: red;
 }
+a.bottom-link:focus {
+  color: palevioletred;
+}
+
+
 
 /*logo end*/
 
@@ -151,7 +166,7 @@ h1 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
- text-decoration: none;
+  text-decoration: none;
   color: #757575;
 }
 
